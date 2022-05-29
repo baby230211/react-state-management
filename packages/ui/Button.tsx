@@ -1,4 +1,8 @@
 import * as React from "react";
-export const Button = () => {
-  return <button>Boop</button>;
+interface IButton {
+  onClick: () => void;
+}
+
+export const Button = ({ onClick }: IButton) => {
+  return <button onClick={onClick}>Boop</button>;
 };

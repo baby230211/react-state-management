@@ -16,6 +16,9 @@ importers:
       '@types/react': 17.0.37
       eslint: 7.32.0
       eslint-config-custom: workspace:*
+      mobx: ^6.5.0
+      mobx-react-lite: ^3.4.0
+      mobx-state-tree: ^5.1.5
       next: 12.0.8
       next-transpile-modules: 9.0.0
       react: 17.0.2
@@ -24,6 +27,9 @@ importers:
       typescript: ^4.5.3
       ui: workspace:*
     dependencies:
+      mobx: 6.5.0
+      mobx-react-lite: 3.4.0_3b110ddd052df537d55bc762cdd4d0b8
+      mobx-state-tree: 5.1.5_mobx@6.5.0
       next: 12.0.8_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -1538,6 +1544,36 @@ packages:
 
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
+    dev: false
+
+  /mobx-react-lite/3.4.0_3b110ddd052df537d55bc762cdd4d0b8:
+    resolution: {integrity: sha512-bRuZp3C0itgLKHu/VNxi66DN/XVkQG7xtoBVWxpvC5FhAqbOCP21+nPhULjnzEqd7xBMybp6KwytdUpZKEgpIQ==}
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17 || ^18
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: 6.5.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /mobx-state-tree/5.1.5_mobx@6.5.0:
+    resolution: {integrity: sha512-jugIic0PYWW+nzzYfp4RUy9dec002Z778OC6KzoOyBHnqxupK9iPCsUJYkHjmNRHjZ8E4Z7qQpsKV3At/ntGVw==}
+    peerDependencies:
+      mobx: ^6.3.0
+    dependencies:
+      mobx: 6.5.0
+    dev: false
+
+  /mobx/6.5.0:
+    resolution: {integrity: sha512-pHZ/cySF00FVENDWIDzJyoObFahK6Eg4d0papqm6d7yMkxWTZ/S/csqJX1A3PsYy4t5k3z2QnlwuCfMW5lSEwA==}
     dev: false
 
   /ms/2.0.0:
